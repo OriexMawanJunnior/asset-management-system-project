@@ -9,12 +9,12 @@ use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmployeeController;
 
-Route::middleware(['guest', 'cors'])->group(function () {
+Route::middleware('guest')->group(function () {
     Route::get('/', [AuthController::class, 'show'])->name('login');
     Route::post('/login', [AuthController::class, 'authenticate'])->name('signIn');
 });
 
-Route::middleware(['auth', 'cors'])->group(function () {
+Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
     Route::resource('assets', AssetController::class);

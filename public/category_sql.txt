@@ -1,0 +1,7 @@
+INSERT INTO `category`(`name`, `code`, `remaks`) VALUES 
+('Computer','COM','PC Computer, Monitor, Keyboard, Mouse, Laptop, Printer, Scanner, UPS, DVR, Server, Projector, Router, Developer Kit, Keyboard+Mouse Wireless'),
+('Furniture','FUR','Cabinet, Credenza, Table, Chair, Deposit Box, Filing Cabinet, Potrait, Standing Hanger, Drawer, Sofa, Round Plastic Chair, White Board, Trashbin, Glassboard, Cupboard, Tissue Box, Lemari Loker, Lemari Arsip '),
+('Office Machine','OME','Television, Dispenser, Microwave, Telephone PABX, Paper Shredder, Air Conditioner, Fan, Standing Fan, Exhaust Fan, Air Purify, Cooling Fan, Coffe Maker, Refrigerator, Thermometer Digital, Photo Copy Machine, Finger Print, Compressor, Fog Machine, Mesin Steam Jet Cleaner, Mesin Matabor, Black Decker Heat Gun'),
+('Office Equipment','OEQ','External Harddisk, Harddisk, Flashdisk, Powerbank, Calculator, APAR, Clock, Camera, Digicam, Mobile Phone, Screen Projector, Webcam, Microphone, Cooler Device, Safe Deposit Box, Bracket Tv, Tripod, Speaker, Modem Internet, HT, Flaring&Swaging Tool Kit, Tespen, Lighting Set, Laser, Phone Holder'),
+('Automotive','ATO','Car, Motorcycle'),
+('Office Property','PRP','Fire Extinguisher')

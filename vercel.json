@@ -1,13 +1,23 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/api/index.php", "use": "vercel-php@0.6.2" },
+        { 
+            "src": "api/index.php", 
+            "use": "vercel-php@0.6.2",
+            "config": {
+                "runtime": "php8.2"
+            }
+        },
         { "src": "package.json", "use": "@vercel/node" },
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
         {
-            "src": "/(css|js)/(.*)",
+            "src": "^/build/(.*)",
+            "dest": "public/build/$1"
+        },
+        {
+            "src": "^/(css|js|assets)/(.*)",
             "dest": "public/$1/$2"
         },
         {
@@ -38,6 +48,8 @@
         "SESSION_DRIVER": "array",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "SSR_TEMP_PATH": "/tmp/ssr",
+        "PHP_POST_MAX_SIZE": "100M",
+        "PHP_UPLOAD_MAX_FILESIZE": "100M",
         "NODE_VERSION": "18.x"
     },
     "framework": "vite"

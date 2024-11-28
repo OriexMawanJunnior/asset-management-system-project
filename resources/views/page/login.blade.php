@@ -14,10 +14,11 @@
                 @csrf
                 <div class="space-y-6">
                     <div>
-                        <label class="text-white mb-2 block">Email</label>
+                        <label for="email" class="text-white mb-2 block">Email</label>
                         <input 
                             type="text" 
                             name="email" 
+                            id="email" 
                             class="w-full px-4 py-2 rounded-lg @error('email') border-red-500 @enderror" 
                             value="{{ old('email') }}"
                             required 
@@ -25,10 +26,11 @@
                         >
                     </div>
                     <div>
-                        <label class="text-white mb-2 block">Password</label>
+                        <label for="password" class="text-white mb-2 block">Password</label>
                         <input 
                             type="password" 
                             name="password" 
+                            id="password" 
                             class="w-full mb-8 px-4 py-2 rounded-lg @error('password') border-red-500 @enderror" 
                             required
                         >

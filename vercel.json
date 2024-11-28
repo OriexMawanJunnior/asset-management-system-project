@@ -17,6 +17,7 @@
     ],
     "env": {
         "APP_NAME": "Vercel Laravel",
+        "APP_KEY": "base64:o45w8b8Mp3xWxaemBduy95HtiA/fwWN3sCbnzRAIl28=",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://asset-management-system-project.vercel.app",

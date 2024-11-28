@@ -2,6 +2,7 @@
     "version": 2,
     "builds": [
         { "src": "/api/index.php", "use": "vercel-php@0.6.2" },
+        { "src": "package.json", "use": "@vercel/node" },
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
@@ -36,6 +37,7 @@
         "SESSION_DRIVER": "array",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "SSR_TEMP_PATH": "/tmp/ssr",
-        "NODE_PATH": "node"
-    }
+        "NODE_VERSION": "18.x"
+    },
+    "framework": "vite"
 }

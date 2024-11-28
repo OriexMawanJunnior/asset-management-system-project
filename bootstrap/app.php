@@ -13,7 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->group('web', [
-            \app\Http\Middleware\EnsureHttps::class,
+            \App\Http\Middleware\EnsureHttps::class,
             \Illuminate\Http\Middleware\TrustProxies::class,
             \Illuminate\Http\Middleware\HandleCors::class,
             \Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance::class,

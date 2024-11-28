@@ -10,14 +10,14 @@ export default defineConfig({
         }),
         tailwindcss()
     ],
+    server: {
+        strictPort: true,
+        https: true, // Menggunakan HTTPS untuk development server
+        hmr: {
+            host: 'localhost', // Ganti dengan domain development Anda jika perlu
+        },
+    },
     build: {
         outDir: 'public/build',
-        rollupOptions: {
-            output: {
-              entryFileNames: 'assets/app-[hash].js',
-              chunkFileNames: 'assets/app-[hash].js',
-              assetFileNames: 'assets/app-[hash].[ext]'
-            }
-        }
     },
 });

@@ -10,13 +10,6 @@ export default defineConfig({
         }),
         tailwindcss()
     ],
-    server: {
-        strictPort: true,
-        https: true, // Menggunakan HTTPS untuk development server
-        hmr: {
-            host: 'localhost', // Ganti dengan domain development Anda jika perlu
-        },
-    },
     build: {
         outDir: 'public/build',
     },

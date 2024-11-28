@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AMS</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ mix('assets/app.css') }}" rel="stylesheet">
+    <script src="{{ mix('assets/app.js') }}" defer></script>
 </head>
 <body class="bg-[#FFF3E0]">
     <div class="min-h-screen flex">

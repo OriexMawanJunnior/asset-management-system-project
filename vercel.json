@@ -12,7 +12,7 @@
             "src": "package.json",
             "use": "@vercel/node",
             "config": {
-              "npm run build": true
+                "buildCommand": "npm install && npm run build"
             }
         },
         { "src": "/public/**", "use": "@vercel/static" }

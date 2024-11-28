@@ -8,7 +8,13 @@
                 "runtime": "php8.2"
             }
         },
-        { "src": "package.json", "use": "@vercel/node" },
+        {
+            "src": "package.json",
+            "use": "@vercel/node",
+            "config": {
+              "npm run build": true
+            }
+        },
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
